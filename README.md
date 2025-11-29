@@ -8,10 +8,12 @@ The aim is to show a clear end-to-end workflow: data download, data preparation,
 2-Project Contents
 
 Scripts
+
 download_data.py – downloads the frequency and severity data into the data/ folder.
 preview_data.py – prints basic information to confirm the data loaded correctly.
 
 Notebooks
+
 01_eda.ipynb – data exploration, distributions, correlations, and basic checks.
 02_glm.ipynb – Poisson GLM with exposure offset and decile validation.
 03_boosting.ipynb – XGBoost and CatBoost models, performance comparison, feature importance.
@@ -19,13 +21,17 @@ Notebooks
 05_fairness.ipynb – fairness analysis across driver age groups and urban/rural populations.
 
 Folders
+
 data/ – raw datasets (ignored in Git).
 outputs/ – model predictions and intermediate files (ignored in Git).
+
+
 
 
 3-How to Run the Project
 
 Create and activate a Python 3.10 virtual environment.
+
 Install requirements:
 pip install -r requirements.txt
 
@@ -82,3 +88,19 @@ Rural drivers show a disparate impact ratio of about 0.77.
 These differences reflect established risk patterns in motor insurance.
 No evidence of model-driven unfairness was found, but monitoring and calibration are recommended.
 
+
+
+
+## Example outputs
+
+### Driver age distribution
+
+![Driver age distribution](figures/driver_age_distribution.png)
+
+### CatBoost feature importance
+
+![CatBoost feature importance](figures/catboost_feature_importance.png)
+
+### Fairness: disparate impact by age group
+
+![Fairness by age group](figures/fairness_age_di.png)
