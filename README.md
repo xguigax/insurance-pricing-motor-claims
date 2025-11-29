@@ -8,12 +8,10 @@ The aim is to show a clear end-to-end workflow: data download, data preparation,
 2-Project Contents
 
 Scripts
-
 download_data.py – downloads the frequency and severity data into the data/ folder.
 preview_data.py – prints basic information to confirm the data loaded correctly.
 
 Notebooks
-
 01_eda.ipynb – data exploration, distributions, correlations, and basic checks.
 02_glm.ipynb – Poisson GLM with exposure offset and decile validation.
 03_boosting.ipynb – XGBoost and CatBoost models, performance comparison, feature importance.
@@ -21,7 +19,6 @@ Notebooks
 05_fairness.ipynb – fairness analysis across driver age groups and urban/rural populations.
 
 Folders
-
 data/ – raw datasets (ignored in Git).
 outputs/ – model predictions and intermediate files (ignored in Git).
 
@@ -29,7 +26,6 @@ outputs/ – model predictions and intermediate files (ignored in Git).
 3-How to Run the Project
 
 Create and activate a Python 3.10 virtual environment.
-
 Install requirements:
 pip install -r requirements.txt
 
@@ -42,6 +38,7 @@ Open the notebooks in order and run them from top to bottom:
 03_boosting
 04_neural_net
 05_fairness
+
 
 
 4-Model Results
