@@ -1,0 +1,17 @@
+# Python virtual env
+venv/
+
+# Data files (download via script)
+data/
+
+# Model outputs and predictions
+outputs/
+models/
+
+# Jupyter noise
+.ipynb_checkpoints/
+*.pyc
+__pycache__/
+
+# VS Code settings
+.vscode/
